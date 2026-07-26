@@ -27,48 +27,6 @@ Domain yang didukung mencakup:
 
 ```text
 .
-├── .devcontainer/                  # 🐳 Dev Containers & Codespaces Isolated Environments
-├── .github/                        # 🤖 GitHub Automation, CI/CD, DevSecOps & Governance
-│   ├── DISCUSSION_TEMPLATE/        # Forms untuk GitHub Discussions
-│   ├── ISSUE_TEMPLATE/             # Standardized issue forms (Bug, Feature, Security)
-│   └── workflows/                  # CI/CD, SAST, SBOM, Scorecards & Linter Workflows
-├── .husky/                         # 🐶 Pre-commit & Pre-push Git Hooks
-├── .vscode/                        # ⚙️ VS Code Workspace Standards & Debug Configs
-├── analytics/                      # 📊 Business Intelligence, dbt Models & SQL Views
-├── apps/                           # 🏢 MONOREPO: Workspace Aplikasi (Web, Mobile, Desktop, API)
-├── benchmarks/                     # ⚡ Performance, Load Testing (k6/Locust) & Profiling
-├── config/                         # 🎛️ Configurations Multi-Environment (Dev, Staging, Prod)
-├── contracts/                      # 📜 Consumer-Driven API Contracts & Smart Contracts
-├── cybersec/                       # 🛡️ Blue Team Rules, Red Team Exploits & Compliance Frameworks
-├── data/                           # 💾 Data Engineering Layer (Raw, Processed, Lakehouse, Streaming)
-├── db/                             # 🗄️ Database Schemas, SQL Migrations & Seeders
-├── docs/                           # 📚 Documentation Hub (C4 Architecture Diagrams, OpenAPI, RFCs)
-├── gamedev/                        # 🎮 Game Engine Configs, Shaders & 3D Assets Specs
-├── hardware/                       # 🔌 Firmware C/C++/Rust, PCB Layouts, Pinouts & RTL
-├── infrastructure/                 # ☁️ Infrastructure as Code (Terraform, Helm, K8s, Ansible)
-├── locales/                        # 🌐 Internationalization & Localization (i18n)
-├── math_proofs/                    # 📐 Formal Verification (Coq & Lean 4 Theorem Proofs)
-├── mlops/                          # 🧠 Machine Learning Pipelines, Feature Stores & Prompts
-├── monitoring/                     # 📈 Observability (Grafana, Prometheus, Datadog, OTEL)
-├── notebooks/                      # 📓 Jupyter / Colab Exploratory Data Science Notebooks
-├── packages/                       # 📦 MONOREPO: Shared SDKs, Core Logic & Design Systems
-├── public/                         # 🌐 CDN Static Assets & Web Storage
-├── quantum/                        # ⚛️ Quantum Computing Circuits (Qiskit & Q#)
-├── reports/                        # 📈 Generated Visualizations, PDF Audits & Figures
-├── scripts/                        # 🛠️ DevOps, Migration, Backup & Setup Automation
-├── security/                       # 🛡️ OPA Rego Policies, Audit Logs & Threat Models
-├── src/                            # 🚀 CORE SOURCE CODE (Clean / Hexagonal Architecture)
-│   ├── api/                        # Controllers, Middlewares & Routes
-│   ├── config/                     # Internal Environment Bootstrapping
-│   ├── core/                       # Entities, Use Cases & Interfaces (Pure Business Logic)
-│   ├── infrastructure/             # Database Access, Repositories & Messaging Producers
-│   └── shared/                     # Utilities, Constants & Custom Error Handlers
-├── tests/                          # 🧪 QA Testing Suite (Unit, Integration, E2E, Mutation, DAST)
-├── tools/                          # 🔧 Internal Engineering CLI & Code Generators
-└── types/                          # 🏷️ Shared Types, Protobuf Specs & gRPC Definitions
-
-
-.
 ├── .devcontainer/                  # 🐳 Dev Containers & Codespaces Environments
 │   ├── devcontainer.json
 │   └── Dockerfile.devcontainer
