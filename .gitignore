@@ -1,0 +1,192 @@
+# ==========================================
+# 🌌 Universal Master Polyglot .gitignore
+# ==========================================
+
+# ------------------------------------------
+# 🔒 Security & Environment Secrets
+# ------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+*.pfx
+*.p12
+*.jks
+*.keystore
+id_rsa
+id_ed25519
+secrets/
+cybersec/red-team/exploits-poc/*
+!cybersec/red-team/exploits-poc/.gitkeep
+
+# ------------------------------------------
+# 🖥️ OS & Editor Specific Files
+# ------------------------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux / Vim / Emacs
+*~
+*.swp
+*.swo
+.#*
+
+# VS Code & IDEs (Kecuali workspace config yang dicommit)
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swr
+
+# ------------------------------------------
+# 📦 Node.js / JavaScript / TypeScript
+# ------------------------------------------
+node_modules/
+jspm_packages/
+.pnpm-store/
+.yarn/
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+.pnp.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.next/
+.nuxt/
+.vuepress/dist
+.astro/
+dist/
+build/
+out/
+.turbo/
+.cache/
+
+# ------------------------------------------
+# 🐍 Python / Jupyter / Data Science / MLOps
+# ------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+mlops/models/*
+!mlops/models/.gitkeep
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# ------------------------------------------
+# 🦀 Rust / 🐹 Go / ☕ Java / 🎯 C++ / C#
+# ------------------------------------------
+# Rust
+/target/
+**/*.rs.bk
+
+# Go
+*.exe
+*.exe?
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Java / Kotlin / Gradle / Maven
+*.class
+*.jar
+*.war
+*.ear
+.gradle/
+build/
+target/
+
+# C / C++ / Embedded Firmware
+*.o
+*.ko
+*.obj
+*.elf
+*.hex
+*.bin
+*.map
+
+# ------------------------------------------
+# ☁️ Infrastructure, Cloud & Terraform
+# ------------------------------------------
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.vagrant/
+
+# ------------------------------------------
+# 📊 Data Engineering & Analytics (dbt / SQL)
+# ------------------------------------------
+analytics/dbt/target/
+analytics/dbt/dbt_packages/
+analytics/dbt/logs/
+
+# ------------------------------------------
+# 🎮 GameDev, Hardware & Spatial
+# ------------------------------------------
+# Unity / Unreal Engine
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Mm]emoryCaptures/
+DerivedData/
+
+# KiCad / Hardware PCB
+*.kicad_pcb-bak
+*.sch-bak
+*-save.pro
+
+# ------------------------------------------
+# 🧪 Testing, Coverage & Benchmarks
+# ------------------------------------------
+coverage/
+.nyc_output/
+*.lcov
+benchmarks/memory-profiling/*.trace
+
+# ------------------------------------------
+# 📝 Temporary Logs & Cache
+# ------------------------------------------
+logs/
+*.log
+*.tmp
+*.bak
