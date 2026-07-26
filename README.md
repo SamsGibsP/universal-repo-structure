@@ -48,7 +48,9 @@ Domain yang didukung mencakup:
 │   │   ├── ci-cd.yml
 │   │   ├── codeql-analysis.yml
 │   │   ├── container-scan.yml
+│   │   ├── dependency-graph.yml
 │   │   ├── linter.yml
+│   │   ├── pr-labeler.yml
 │   │   ├── release-drafter.yml
 │   │   ├── sbom.yml
 │   │   ├── scorecards.yml
@@ -96,7 +98,7 @@ Domain yang didukung mencakup:
 ├── apps/                           # 🏢 MONOREPO: Application Workspace
 │   ├── api/                        # Backend REST / GraphQL / gRPC Microservice
 │   │   └── .gitkeep
-│   ├── desktop/                    # 👈 Electron / Tauri / Native Desktop App
+│   ├── desktop/                    # Electron / Tauri / Native Desktop App
 │   │   └── .gitkeep
 │   ├── mobile/                     # React Native / Flutter / Native App
 │   │   └── .gitkeep
@@ -109,6 +111,12 @@ Domain yang didukung mencakup:
 │   ├── memory-profiling/           # Valgrind / pprof memory traces
 │   │   └── .gitkeep
 │   └── microbenchmarks/            # Google Benchmark / Criterion (C++/Rust/Go)
+│       └── .gitkeep
+│
+├── commercial/                     # 👈 💼 COMMERCIAL DEMOS & ROI CALCULATORS
+│   ├── demos/                      # Sample datasets & pre-configured demo stacks
+│   │   └── .gitkeep
+│   └── roi-models/                 # Client ROI & TCO estimation models
 │       └── .gitkeep
 │
 ├── config/                         # 🎛️ Multi-Environment Configurations
@@ -165,6 +173,12 @@ Domain yang didukung mencakup:
 │   └── seeds/                      # Mock Data Generators & Seeders
 │       └── .gitkeep
 │
+├── design/                         # 🎨 UI/UX DESIGN SYSTEM & DESIGN TOKENS
+│   ├── assets/                     # Raw SVG icons & design exports
+│   │   └── .gitkeep
+│   └── tokens/                     # Style Dictionary design tokens (JSON/YAML)
+│       └── .gitkeep
+│
 ├── docs/                           # 📚 ENTERPRISE DOCUMENTATION HUB
 │   ├── api/                        # OpenAPI 3.0 / Swagger / AsyncAPI specs
 │   │   └── .gitkeep
@@ -177,7 +191,13 @@ Domain yang didukung mencakup:
 │   └── rfc/                        # Design Docs & Request for Comments
 │       └── .gitkeep
 │
-├── gamedev/                        # 👈 🎮 GAME DEVELOPMENT & 3D ASSETS
+├── finops/                         # 💰 CLOUD COST OPTIMIZATION & BUDGETING
+│   ├── infracost/                  # Infracost Terraform policy checks
+│   │   └── .gitkeep
+│   └── policies/                   # Resource lifecycle & TTL policies
+│       └── .gitkeep
+│
+├── gamedev/                        # 🎮 GAME DEVELOPMENT & 3D ASSETS
 │   ├── assets/                     # 3D Models, Textures, Shaders, & Audio (.gitignored)
 │   │   └── .gitkeep
 │   ├── engines/                    # Unity / Unreal Engine / Godot configurations
@@ -196,10 +216,18 @@ Domain yang didukung mencakup:
 │   └── rtl/                        # Verilog / VHDL System Architecture & FPGA
 │       └── .gitkeep
 │
+├── iam/                            # 🔑 IDENTITY, ACCESS & AUTHENTICATION (IAM)
+│   ├── keycloak/                   # Keycloak Realms & Custom Themes
+│   │   └── .gitkeep
+│   └── policies/                   # OAuth2 / SAML / OIDC Policies
+│       └── .gitkeep
+│
 ├── infrastructure/                 # ☁️ INFRASTRUCTURE AS CODE (IaC) & CLOUD
 │   ├── ansible/                    # Server Provisioning & Configuration Playbooks
 │   │   └── .gitkeep
 │   ├── docker/                     # Dedicated Dockerfiles (dev, staging, prod)
+│   │   └── .gitkeep
+│   ├── edge/                       # Cloudflare Workers / CDN Edge Functions
 │   │   └── .gitkeep
 │   ├── helm/                       # Kubernetes Helm Charts
 │   │   └── .gitkeep
@@ -211,25 +239,36 @@ Domain yang didukung mencakup:
 │       │   └── prod/
 │       └── modules/
 │
+├── legal/                          # 👈 ⚖️ INTELLECTUAL PROPERTY & COMPLIANCE LICENSES
+│   ├── IP/                         # Patents, trademarks, & copyright disclosures
+│   │   └── .gitkeep
+│   └── licenses/                   # Third-party vendor license audits
+│       └── .gitkeep
+│
 ├── locales/                        # 🌐 INTERNATIONALIZATION & LOCALIZATION (i18n)
+│   ├── ar/                         # Arabic (RTL testing)
 │   ├── en/
 │   ├── id/
 │   └── ja/
 │
-├── math_proofs/                    # 👈 📐 FORMAL VERIFICATION & MATH PROOFS
+├── math_proofs/                    # 📐 FORMAL VERIFICATION & MATH PROOFS
 │   ├── coq/                        # Coq Proof Assistant files
 │   │   └── .gitkeep
 │   └── lean/                       # Lean 4 Mathematical Theorem Proofs
 │       └── .gitkeep
 │
 ├── mlops/                          # 🧠 MACHINE LEARNING & AI ENGINEERING
+│   ├── evals/                      # LLM Evaluation Benchmarks (Promptfoo / Ragas)
+│   │   └── .gitkeep
 │   ├── feature_store/              # Feast / Hopsworks Feature Definitions
 │   │   └── .gitkeep
 │   ├── models/                     # Trained Model Artifacts (.onnx, .bin, .pth) (.gitignored)
 │   │   └── .gitkeep
 │   ├── pipelines/                  # Kubeflow / Airflow ML Training Pipelines
 │   │   └── .gitkeep
-│   └── prompts/                    # LLM Prompt Engineering Templates & Evaluations
+│   ├── prompts/                    # LLM Prompt Engineering Templates & Evaluations
+│   │   └── .gitkeep
+│   └── vector_store/               # Pinecone / ChromaDB RAG Embeddings Index
 │       └── .gitkeep
 │
 ├── monitoring/                     # 📈 OBSERVABILITY & TELEMETRY
@@ -257,10 +296,16 @@ Domain yang didukung mencakup:
 │   └── ui/                         # Design System Component Library
 │       └── .gitkeep
 │
+├── people/                         # 👈 👥 ENGINEERING OPS & ONBOARDING
+│   ├── career-matrix/              # Engineering career ladder specs
+│   │   └── .gitkeep
+│   └── onboarding/                 # Dev environment setup checklists
+│       └── .gitkeep
+│
 ├── public/                         # 🌐 CDN Static Assets & Web Storage
 │   └── .gitkeep
 │
-├── quantum/                        # 👈 ⚛️ QUANTUM COMPUTING & ALGORITHMS
+├── quantum/                        # ⚛️ QUANTUM COMPUTING & ALGORITHMS
 │   ├── qiskit/                     # IBM Qiskit Quantum Circuits
 │   │   └── .gitkeep
 │   └── qsharp/                     # Microsoft Q# Programs
@@ -298,6 +343,8 @@ Domain yang didukung mencakup:
 │       └── .gitkeep
 │
 ├── tools/                          # 🔧 INTERNAL CLI, CODE GENERATORS & CUSTOM TOOLS
+│   ├── generators/                 # Plop.js / Hygen scaffolding templates
+│   │   └── .gitkeep
 │   └── .gitkeep
 │
 ├── types/                          # 🏷️ SHARED TYPE DEFINITIONS, PROTOBUF & gRPC
